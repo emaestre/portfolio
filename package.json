@@ -23,12 +23,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "lint-staged": {
-    "src/**/*.{js,jsx,json,scss,css}": [
-        "prettier --write",
-        "git add"
-    ]
-  },
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -46,6 +40,19 @@
   },
   "devDependencies": {
     "gh-pages": "^2.2.0",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.8",
     "prettier": "2.0.1"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,json,scss,css}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+        "pre-commit": "lint-staged"
+    }
   }
 }
