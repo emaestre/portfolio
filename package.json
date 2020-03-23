@@ -7,6 +7,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "antd": "^4.0.3",
     "framer-motion": "^1.10.0",
     "node-sass": "^4.13.1",
     "react": "^16.13.1",
@@ -21,6 +22,12 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,json,scss,css}": [
+        "prettier --write",
+        "git add"
+    ]
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -38,6 +45,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^2.2.0"
+    "gh-pages": "^2.2.0",
+    "prettier": "2.0.1"
   }
 }
