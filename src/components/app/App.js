@@ -1,20 +1,13 @@
 import React from 'react';
 import logo from '../../assets/logo.svg';
-import { BrowserRouter, Route, Link } from 'react-router-dom'; 
-import About from '../about';
-import Home from '../home';
-import Projects from '../projects';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
+import AppRouter from './App.router';
 import './App.scss';
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <div className="App">
-
-          <Route exact path="/" component={Home} />
-          <Route exact path="/projects" component={Projects} />
-          <Route path="/about" component={About} />
-
           <div className="navigation">
             <img src={logo} className="App-logo" alt="logo" />
             <div className="navigation-sub">
@@ -23,8 +16,9 @@ function App() {
               <Link to="/about" className="item">About</Link>
             </div>
           </div>
+          <AppRouter/>
       </div>
-    </BrowserRouter>
+    </Router>
   );
 }
 
