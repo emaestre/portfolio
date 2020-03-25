@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useCallback } from 'react';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 import AppRouter from './App.router';
 import { Layout, Menu } from 'antd';
@@ -12,29 +12,65 @@ import './App.scss';
 const { Header, Content, Footer, Sider } = Layout;
 
 function App() {
+    const [isCollapsed, setIsCollapsed] = useState(false);
+
+    const handleCollapse = useCallback(collapsed => {
+        console.log(collapsed);
+        setIsCollapsed(collapsed);
+    }, []);
+
     return (
         <Router>
             <Layout>
-                <Sider width="300" breakpoint="sm" className="App__sider">
+                <Sider
+                    width="500"
+                    breakpoint="sm"
+                    className="App__sider"
+                    collapsible
+                    collapsed={isCollapsed}
+                    onCollapse={handleCollapse}
+                >
                     <div className="App__logo">
                         <p>Hello, world!</p>
                     </div>
                     <Menu
                         theme="dark"
                         mode="inline"
-                        defaultSelectedKeys={['4']}
+                        defaultSelectedKeys={['1']}
+                        className="App__menu"
                     >
                         <Menu.Item key="1">
                             <UserOutlined />
-                            <Link to="/">Home</Link>
+                            <span>
+                                <Link
+                                    className="App__menu-item-link"
+                                    to="/portfolio"
+                                >
+                                    Home
+                                </Link>
+                            </span>
                         </Menu.Item>
                         <Menu.Item key="2">
                             <VideoCameraOutlined />
-                            <Link to="/projects">Projects</Link>
+                            <span>
+                                <Link
+                                    className="App__menu-item-link"
+                                    to="/portfolio/projects"
+                                >
+                                    Projects
+                                </Link>
+                            </span>
                         </Menu.Item>
                         <Menu.Item key="3">
                             <UploadOutlined />
-                            <Link to="/about">About</Link>
+                            <span>
+                                <Link
+                                    className="App__menu-item-link"
+                                    to="/portfolio/about"
+                                >
+                                    About
+                                </Link>
+                            </span>
                         </Menu.Item>
                     </Menu>
                 </Sider>
