@@ -16,7 +16,9 @@ function App() {
         <Router>
             <Layout>
                 <Sider width="300" breakpoint="sm" className="App__sider">
-                    <div className="App__logo" />
+                    <div className="App__logo">
+                        <p>Hello, world!</p>
+                    </div>
                     <Menu
                         theme="dark"
                         mode="inline"
