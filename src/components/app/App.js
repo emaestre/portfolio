@@ -15,8 +15,8 @@ function App() {
     return (
         <Router>
             <Layout>
-                <Sider className="site-sider">
-                    <div className="logo" />
+                <Sider width="300" breakpoint="sm" className="App__sider">
+                    <div className="App__logo" />
                     <Menu
                         theme="dark"
                         mode="inline"
@@ -24,40 +24,26 @@ function App() {
                     >
                         <Menu.Item key="1">
                             <UserOutlined />
-                            <Link to="/" className="item">
-                                Home
-                            </Link>
+                            <Link to="/">Home</Link>
                         </Menu.Item>
                         <Menu.Item key="2">
                             <VideoCameraOutlined />
-                            <Link to="/projects" className="item">
-                                Projects
-                            </Link>
+                            <Link to="/projects">Projects</Link>
                         </Menu.Item>
                         <Menu.Item key="3">
                             <UploadOutlined />
-                            <Link to="/about" className="item">
-                                About
-                            </Link>
+                            <Link to="/about">About</Link>
                         </Menu.Item>
                     </Menu>
                 </Sider>
-                <Layout className="site-layout" style={{ marginLeft: 200 }}>
-                    <Header
-                        className="site-layout-background"
-                        style={{ padding: 0 }}
-                    />
-                    <Content
-                        style={{ margin: '24px 16px 0', overflow: 'initial' }}
-                    >
-                        <div
-                            className="site-layout-background"
-                            style={{ padding: 24, textAlign: 'center' }}
-                        >
+                <Layout className="App__layout">
+                    <Header className="App__header App__layout--background" />
+                    <Content className="App__content">
+                        <div className="App__content-container App__layout--background">
                             <AppRouter />
                         </div>
                     </Content>
-                    <Footer style={{ textAlign: 'center' }}>
+                    <Footer className="App__footer">
                         Copyright &copy; 2020 by Eleazar Maestre.
                     </Footer>
                 </Layout>
