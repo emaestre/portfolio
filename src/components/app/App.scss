@@ -40,6 +40,23 @@
     background: $white;
 }
 
+.App__menu {
+    position: relative;
+}
+
+.App__menu-item-link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    z-index: 10;
+    color: $white;
+}
+
+.App__menu-item-link:hover {
+    color: $white;
+}
+
 .App__footer {
     text-align: center;
     margin-left: 15%;
