@@ -15,24 +15,20 @@ function App() {
     const [isCollapsed, setIsCollapsed] = useState(false);
 
     const handleCollapse = useCallback(collapsed => {
-        console.log(collapsed);
         setIsCollapsed(collapsed);
     }, []);
 
     return (
         <Router>
-            <Layout>
+            <Layout className="App__layout">
                 <Sider
                     width="500"
-                    breakpoint="sm"
                     className="App__sider"
                     collapsible
                     collapsed={isCollapsed}
                     onCollapse={handleCollapse}
                 >
-                    <div className="App__logo">
-                        <p>Hello, world!</p>
-                    </div>
+                    <div className="App__logo" />
                     <Menu
                         theme="dark"
                         mode="inline"

@@ -1,11 +1,5 @@
 @import '../../sass/variables';
-
-.App__sider {
-    overflow: auto;
-    height: 100vh;
-    position: fixed;
-    left: 0;
-}
+@import '../../sass/mixins';
 
 .App__logo {
     height: 32px;
@@ -14,7 +8,16 @@
 }
 
 .App__layout {
-    margin-left: 200;
+    min-height: 100vh;
+}
+
+.App__sider {
+    @include phone {
+        overflow: auto;
+        height: 100vh;
+        position: fixed;
+        left: 0;
+    }
 }
 
 .App__header {
@@ -23,17 +26,19 @@
 
 .App__layout .App__layout--background {
     background: $white;
+    padding: 24px;
 }
 
 .App__content {
-    margin-top: 24px;
-    margin-left: 15%;
+    margin: 0 16px;
     overflow: initial;
 }
 
 .App__content-container {
     padding: 24px;
+    min-height: 360px;
     text-align: center;
+    margin-top: 5%;
 }
 
 .App__content .App__content--background {
