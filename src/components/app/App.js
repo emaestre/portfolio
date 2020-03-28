@@ -1,16 +1,17 @@
 import React, { useState, useCallback } from 'react';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
-import AppRouter from './App.router';
 import { Layout, Menu } from 'antd';
 import {
     UserOutlined,
     UploadOutlined,
     VideoCameraOutlined,
 } from '@ant-design/icons';
+import AppRouter from './App.router';
 import './App.scss';
 
 const { Header, Content, Footer, Sider } = Layout;
 
+// TODO: Try to create a Menu component to reduce the App complexity
 function App() {
     const [isCollapsed, setIsCollapsed] = useState(false);
 
