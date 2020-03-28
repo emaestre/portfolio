@@ -17,6 +17,17 @@
         height: 100vh;
         position: fixed;
         left: 0;
+        .anticon {
+            margin-right: 25%;
+        }
+    }
+}
+
+.ant-layout-sider-collapsed {
+    @include phone {
+        .anticon {
+            margin-right: 0px;
+        }
     }
 }
 
@@ -32,6 +43,10 @@
 .App__content {
     margin: 0 16px;
     overflow: initial;
+    @include phone {
+        margin-left: 25%;
+        margin-right: 10%;
+    }
 }
 
 .App__content-container {
