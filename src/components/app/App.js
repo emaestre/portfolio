@@ -36,7 +36,7 @@ function App() {
                         defaultSelectedKeys={['1']}
                         className="App__menu"
                     >
-                        <Menu.Item key="1">
+                        <Menu.Item key="1" title="Home">
                             <UserOutlined />
                             <span>
                                 <Link
@@ -47,7 +47,7 @@ function App() {
                                 </Link>
                             </span>
                         </Menu.Item>
-                        <Menu.Item key="2">
+                        <Menu.Item key="2" title="Projects">
                             <VideoCameraOutlined />
                             <span>
                                 <Link
@@ -58,7 +58,7 @@ function App() {
                                 </Link>
                             </span>
                         </Menu.Item>
-                        <Menu.Item key="3">
+                        <Menu.Item key="3" title="About">
                             <UploadOutlined />
                             <span>
                                 <Link
@@ -72,7 +72,9 @@ function App() {
                     </Menu>
                 </Sider>
                 <Layout className="App__layout">
-                    <Header className="App__header App__layout--background" />
+                    <Header className="App__header App__layout--background">
+                        <h1>Eleazar Maestre D' Armas</h1>
+                    </Header>
                     <Content className="App__content">
                         <div className="App__content-container App__layout--background">
                             <AppRouter />
