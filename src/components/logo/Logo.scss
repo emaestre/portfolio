@@ -1,0 +1,41 @@
+@import 'sass/variables';
+@import 'sass/mixins';
+
+.Logo {
+    text-decoration: none;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    justify-content: center;
+    color: $white;
+    @include phone {
+        margin-right: 25%;
+    }
+}
+
+.Logo__mark {
+    margin-right: 5px;
+}
+
+.Logo__cursor {
+    display: inline-block;
+    width: 8px;
+    height: 1rem;
+    background: $aquamarine;
+    margin-left: 5px;
+    border-radius: 1px;
+    animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

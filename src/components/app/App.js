@@ -6,6 +6,7 @@ import {
     UploadOutlined,
     VideoCameraOutlined,
 } from '@ant-design/icons';
+import Logo from '../logo';
 import AppRouter from './App.router';
 import './App.scss';
 
@@ -29,7 +30,7 @@ function App() {
                     collapsed={isCollapsed}
                     onCollapse={handleCollapse}
                 >
-                    <div className="App__logo" />
+                    <Logo collapsed={isCollapsed} />
                     <Menu
                         theme="dark"
                         mode="inline"
