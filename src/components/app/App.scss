@@ -79,4 +79,7 @@
 
 .App__footer {
     text-align: center;
+    @include phone {
+        margin-left: 20%;
+    }
 }
