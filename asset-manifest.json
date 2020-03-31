@@ -1,23 +1,18 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.5f361e03.chunk.css",
-    "main.js": "/portfolio/static/js/main.063ad1be.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.063ad1be.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.075c0788.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.075c0788.js.map",
-    "static/js/2.b470c4b9.chunk.js": "/portfolio/static/js/2.b470c4b9.chunk.js",
-    "static/js/2.b470c4b9.chunk.js.map": "/portfolio/static/js/2.b470c4b9.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.0b23bbe5.chunk.css",
+    "main.js": "/portfolio/static/js/main.b30a784c.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.b30a784c.chunk.js.map",
+    "runtime~main.js": "/portfolio/static/js/runtime~main.f308c8e6.js",
+    "runtime~main.js.map": "/portfolio/static/js/runtime~main.f308c8e6.js.map",
+    "static/css/2.4d66749c.chunk.css": "/portfolio/static/css/2.4d66749c.chunk.css",
+    "static/js/2.4c5d8f7b.chunk.js": "/portfolio/static/js/2.4c5d8f7b.chunk.js",
+    "static/js/2.4c5d8f7b.chunk.js.map": "/portfolio/static/js/2.4c5d8f7b.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.7f14456730bee2b4439fd53013a39d03.js": "/portfolio/precache-manifest.7f14456730bee2b4439fd53013a39d03.js",
+    "precache-manifest.6ad46613f2fa8340bbce3a3c2c8dd217.js": "/portfolio/precache-manifest.6ad46613f2fa8340bbce3a3c2c8dd217.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.5f361e03.chunk.css.map": "/portfolio/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.b470c4b9.chunk.js.LICENSE.txt": "/portfolio/static/js/2.b470c4b9.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/portfolio/static/media/logo.5d5d9eef.svg"
-  },
-  "entrypoints": [
-    "static/js/runtime-main.075c0788.js",
-    "static/js/2.b470c4b9.chunk.js",
-    "static/css/main.5f361e03.chunk.css",
-    "static/js/main.063ad1be.chunk.js"
-  ]
+    "static/css/2.4d66749c.chunk.css.map": "/portfolio/static/css/2.4d66749c.chunk.css.map",
+    "static/css/main.0b23bbe5.chunk.css.map": "/portfolio/static/css/main.0b23bbe5.chunk.css.map",
+    "static/media/alaska-4714097_1280.jpg": "/portfolio/static/media/alaska-4714097_1280.5b4f4a60.jpg"
+  }
 }
