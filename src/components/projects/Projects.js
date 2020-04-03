@@ -11,21 +11,21 @@ function Projects(props) {
             <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
                 <Col span={8}>
                     <Thumbnail
-                        link="/portfolio"
+                        link="/"
                         image={alaskaImg}
                         title="First project"
                     />
                 </Col>
                 <Col span={8}>
                     <Thumbnail
-                        link="/portfolio"
+                        link="/"
                         image={alaskaImg}
                         title="Second Project"
                     />
                 </Col>
                 <Col span={8}>
                     <Thumbnail
-                        link="/portfolio"
+                        link="/"
                         image={alaskaImg}
                         title="Third project"
                     />

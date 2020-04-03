@@ -37,35 +37,29 @@ function App() {
                     selectedKeys={[location.pathname]}
                     className="App__menu"
                 >
-                    <Menu.Item key="/portfolio" title="Home">
+                    <Menu.Item key="/" title="Home">
                         <UserOutlined />
                         <span>
-                            <Link
-                                className="App__menu-item-link"
-                                to="/portfolio"
-                            >
+                            <Link className="App__menu-item-link" to="/">
                                 Home
                             </Link>
                         </span>
                     </Menu.Item>
-                    <Menu.Item key="/portfolio/projects" title="Projects">
+                    <Menu.Item key="/projects" title="Projects">
                         <VideoCameraOutlined />
                         <span>
                             <Link
                                 className="App__menu-item-link"
-                                to="/portfolio/projects"
+                                to="/projects"
                             >
                                 Projects
                             </Link>
                         </span>
                     </Menu.Item>
-                    <Menu.Item key="/portfolio/about" title="About">
+                    <Menu.Item key="/about" title="About">
                         <UploadOutlined />
                         <span>
-                            <Link
-                                className="App__menu-item-link"
-                                to="/portfolio/about"
-                            >
+                            <Link className="App__menu-item-link" to="/about">
                                 About
                             </Link>
                         </span>
