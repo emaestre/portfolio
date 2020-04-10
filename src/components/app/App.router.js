@@ -5,13 +5,11 @@ import Home from '../home';
 import Projects from '../projects';
 
 function AppRouter() {
-    const publicUrl = process.env.PUBLIC_URL;
-
     return (
         <Switch>
-            <Route exact path={publicUrl + '/'} component={Home} />
-            <Route exact path={publicUrl + '/projects'} component={Projects} />
-            <Route path={publicUrl + '/about'} component={About} />
+            <Route exact path={'/'} component={Home} />
+            <Route exact path={'/projects'} component={Projects} />
+            <Route path={'/about'} component={About} />
         </Switch>
     );
 }
