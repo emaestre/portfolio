@@ -1,22 +1,32 @@
 import React from 'react';
+import { Card } from 'antd';
+import { GithubOutlined } from '@ant-design/icons';
 import { Link } from 'react-router-dom';
 import './Thumbnail.scss';
+
+const { Meta } = Card;
 
 function Thumbnail(props) {
     const { link, image, title } = props;
 
     return (
         <div className="Thumbnail">
-            <Link to={link}>
-                <div className="Thumbnail__imageContainer">
+            <Card
+                cover={
                     <img
                         className="Thumbnail__image"
                         src={image}
                         alt="Project"
                     />
-                </div>
-                <div className="Thumbnail__title">{title}</div>
-            </Link>
+                }
+                actions={[
+                    <Link to={link}>
+                        <GithubOutlined key="githubUrl" />
+                    </Link>,
+                ]}
+            >
+                <Meta title={title} />
+            </Card>
         </div>
     );
 }
