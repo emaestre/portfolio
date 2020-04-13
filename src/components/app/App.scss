@@ -9,6 +9,8 @@
 
 .App__layout {
     min-height: 100vh;
+    background: linear-gradient(-70deg, #0473e3 30%, rgba(0, 0, 0, 0) 30%),
+        #f1f2f5;
 }
 
 .App__sider {
@@ -21,6 +23,12 @@
             margin-right: 25%;
         }
     }
+}
+
+.App__sider,
+.App__menu,
+.ant-layout-sider-trigger {
+    background: linear-gradient(to right, rgb(2, 27, 121), rgb(5, 117, 230));
 }
 
 .ant-layout-sider-collapsed {
@@ -82,4 +90,8 @@
     @include phone {
         margin-left: 20%;
     }
+}
+
+.ant-layout-footer {
+    background: transparent;
 }
