@@ -2,9 +2,9 @@ import React, { useState, useCallback } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Layout, Menu } from 'antd';
 import {
+    HomeOutlined,
+    FundProjectionScreenOutlined,
     UserOutlined,
-    UploadOutlined,
-    VideoCameraOutlined,
 } from '@ant-design/icons';
 import Logo from '../logo';
 import AppRouter from './App.router';
@@ -38,7 +38,7 @@ function App() {
                     className="App__menu"
                 >
                     <Menu.Item key="/" title="Home">
-                        <UserOutlined />
+                        <HomeOutlined />
                         <span>
                             <Link className="App__menu-item-link" to="/">
                                 Home
@@ -46,7 +46,7 @@ function App() {
                         </span>
                     </Menu.Item>
                     <Menu.Item key="/projects" title="Projects">
-                        <VideoCameraOutlined />
+                        <FundProjectionScreenOutlined />
                         <span>
                             <Link
                                 className="App__menu-item-link"
@@ -57,7 +57,7 @@ function App() {
                         </span>
                     </Menu.Item>
                     <Menu.Item key="/about" title="About">
-                        <UploadOutlined />
+                        <UserOutlined />
                         <span>
                             <Link className="App__menu-item-link" to="/about">
                                 About
