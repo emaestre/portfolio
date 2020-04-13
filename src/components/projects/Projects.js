@@ -8,22 +8,40 @@ function Projects(props) {
     return (
         <div className="Projects">
             <h1>Projects</h1>
-            <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
-                <Col span={8}>
+            <Row gutter={[24, 24]}>
+                <Col
+                    xs={{ span: 24 }}
+                    sm={{ span: 24 }}
+                    md={{ span: 12 }}
+                    lg={{ span: 8 }}
+                    xl={{ span: 8 }}
+                >
                     <Thumbnail
                         link="/"
                         image={alaskaImg}
                         title="First project"
                     />
                 </Col>
-                <Col span={8}>
+                <Col
+                    xs={{ span: 24 }}
+                    sm={{ span: 24 }}
+                    md={{ span: 12 }}
+                    lg={{ span: 8 }}
+                    xl={{ span: 8 }}
+                >
                     <Thumbnail
                         link="/"
                         image={alaskaImg}
                         title="Second Project"
                     />
                 </Col>
-                <Col span={8}>
+                <Col
+                    xs={{ span: 24 }}
+                    sm={{ span: 24 }}
+                    md={{ span: 12 }}
+                    lg={{ span: 8 }}
+                    xl={{ span: 8 }}
+                >
                     <Thumbnail
                         link="/"
                         image={alaskaImg}
