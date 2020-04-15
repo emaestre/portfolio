@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Layout, Menu } from 'antd';
+import { Layout, Menu, Alert } from 'antd';
 import {
     HomeOutlined,
     FundProjectionScreenOutlined,
@@ -70,6 +70,12 @@ function App() {
                 <Header className="App__header App__layout--background">
                     <h1>Eleazar Maestre D' Armas</h1>
                 </Header>
+                <Alert
+                    message="This website is under development, for any ideas or concerns please refer to eleazarenrique23@gmail.com"
+                    type="warning"
+                    showIcon
+                    closable
+                />
                 <Content className="App__content">
                     <div className="App__content-container App__layout--background">
                         <AppRouter />

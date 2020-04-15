@@ -31,14 +31,6 @@
     background: linear-gradient(to right, rgb(2, 27, 121), rgb(5, 117, 230));
 }
 
-.ant-layout-sider-collapsed {
-    @include phone {
-        .anticon {
-            margin-right: 0px;
-        }
-    }
-}
-
 .App__header {
     padding: 5px;
     text-align: center;
@@ -92,6 +84,20 @@
     }
 }
 
+// --- AntDesign styles overwriting ---
+
+.ant-layout-sider-collapsed {
+    @include phone {
+        .anticon {
+            margin-right: 0px;
+        }
+    }
+}
+
 .ant-layout-footer {
     background: transparent;
+}
+
+.ant-alert {
+    text-align: center;
 }
