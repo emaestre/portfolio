@@ -2,7 +2,7 @@
 
 [![Inline docs](http://inch-ci.org/github/emaestre/portfolio.svg?branch=master)](http://inch-ci.org/github/emaestre/portfolio)
 [![HitCount](http://hits.dwyl.com/emaestre/portfolio.svg)](http://hits.dwyl.com/emaestre/portfolio)
-[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/emaestre/portfolio/issues)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
