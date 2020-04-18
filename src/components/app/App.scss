@@ -9,7 +9,9 @@
 
 .App__layout {
     min-height: 100vh;
-    background: linear-gradient(-70deg, $softblue 30%, $black 30%), $clearwhite;
+    background: linear-gradient(-70deg, $softblue 30%, $black 30%),
+        url('../../assets/background.jpg');
+    background-size: cover;
 }
 
 .App__sider {
@@ -78,6 +80,8 @@
 
 .App__footer {
     text-align: center;
+    font-weight: bold;
+    color: $white;
     @include phone {
         margin-left: 20%;
     }
