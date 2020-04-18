@@ -6,7 +6,7 @@ import {
     FundProjectionScreenOutlined,
     UserOutlined,
 } from '@ant-design/icons';
-import Logo from '../logo';
+import Logo from 'components/logo';
 import AppRouter from './App.router';
 import './App.scss';
 

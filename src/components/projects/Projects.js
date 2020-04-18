@@ -1,7 +1,7 @@
 import React from 'react';
 import { Row, Col } from 'antd';
-import Thumbnail from '../thumbnail';
-import alaskaImg from '../../assets/alaska-4714097_1280.jpg';
+import Thumbnail from 'components/thumbnail';
+import alaskaImg from 'assets/alaska-4714097_1280.jpg';
 import './Projects.scss';
 
 function Projects(props) {
@@ -31,7 +31,7 @@ function Projects(props) {
                 >
                     <Thumbnail
                         link="/"
-                        image={alaskaImg}
+                        image={'https://source.unsplash.com/random'}
                         title="Second Project"
                     />
                 </Col>
@@ -44,7 +44,7 @@ function Projects(props) {
                 >
                     <Thumbnail
                         link="/"
-                        image={alaskaImg}
+                        image={'https://source.unsplash.com/user/erondu'}
                         title="Third project"
                     />
                 </Col>

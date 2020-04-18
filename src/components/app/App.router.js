@@ -1,8 +1,8 @@
 import React from 'react';
 import { Route, Switch } from 'react-router';
-import About from '../about';
-import Home from '../home';
-import Projects from '../projects';
+import About from 'components/about';
+import Home from 'components/home';
+import Projects from 'components/projects';
 
 function AppRouter() {
     return (
