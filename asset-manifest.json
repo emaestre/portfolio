@@ -1,18 +1,21 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.d3166a68.chunk.css",
-    "main.js": "/portfolio/static/js/main.a449f44f.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.a449f44f.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.d8b64ed9.chunk.css",
+    "main.js": "/portfolio/static/js/main.a8ea01dc.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.a8ea01dc.chunk.js.map",
     "runtime~main.js": "/portfolio/static/js/runtime~main.f308c8e6.js",
     "runtime~main.js.map": "/portfolio/static/js/runtime~main.f308c8e6.js.map",
     "static/css/2.4d66749c.chunk.css": "/portfolio/static/css/2.4d66749c.chunk.css",
-    "static/js/2.e4c0ed34.chunk.js": "/portfolio/static/js/2.e4c0ed34.chunk.js",
-    "static/js/2.e4c0ed34.chunk.js.map": "/portfolio/static/js/2.e4c0ed34.chunk.js.map",
+    "static/js/2.6182e87f.chunk.js": "/portfolio/static/js/2.6182e87f.chunk.js",
+    "static/js/2.6182e87f.chunk.js.map": "/portfolio/static/js/2.6182e87f.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.8c734a321a0939aa08ab5b30522e5aea.js": "/portfolio/precache-manifest.8c734a321a0939aa08ab5b30522e5aea.js",
+    "precache-manifest.b155e264e4bd1abe131f646159266d8e.js": "/portfolio/precache-manifest.b155e264e4bd1abe131f646159266d8e.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/2.4d66749c.chunk.css.map": "/portfolio/static/css/2.4d66749c.chunk.css.map",
-    "static/css/main.d3166a68.chunk.css.map": "/portfolio/static/css/main.d3166a68.chunk.css.map",
-    "static/media/alaska-4714097_1280.jpg": "/portfolio/static/media/alaska-4714097_1280.5b4f4a60.jpg"
+    "static/css/main.d8b64ed9.chunk.css.map": "/portfolio/static/css/main.d8b64ed9.chunk.css.map",
+    "static/media/index.scss": "/portfolio/static/media/OpenSans-Regular.3ed9575d.ttf",
+    "static/media/alaska-4714097_1280.jpg": "/portfolio/static/media/alaska-4714097_1280.5b4f4a60.jpg",
+    "static/media/App.scss": "/portfolio/static/media/background.c2b85fa2.jpg",
+    "static/media/profile.jpg": "/portfolio/static/media/profile.342a52a3.jpg"
   }
 }
