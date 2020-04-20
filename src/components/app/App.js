@@ -1,12 +1,13 @@
 import React, { useState, useCallback } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Layout, Menu, Alert } from 'antd';
+import { Layout, Menu, Alert, Avatar, Row, Col } from 'antd';
 import {
     HomeOutlined,
     FundProjectionScreenOutlined,
     UserOutlined,
 } from '@ant-design/icons';
 import Logo from 'components/logo';
+import profileImg from 'assets/profile.jpg';
 import AppRouter from './App.router';
 import './App.scss';
 
@@ -23,6 +24,7 @@ function App() {
 
     return (
         <Layout className="App__layout">
+            {/* TODO: This should be a component */}
             <Sider
                 width="500"
                 className="App__sider"
@@ -65,6 +67,12 @@ function App() {
                         </span>
                     </Menu.Item>
                 </Menu>
+                {/* TODO: This should be a component */}
+                <Row justify="center" align="top">
+                    <Col span={24}>
+                        <Avatar size={100} src={profileImg} />
+                    </Col>
+                </Row>
             </Sider>
             <Layout className="App__layout">
                 <Header className="App__header App__layout--background">
