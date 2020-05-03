@@ -68,9 +68,13 @@ function App() {
                     </Menu.Item>
                 </Menu>
                 {/* TODO: This should be a component */}
-                <Row justify="center" align="top">
+                <Row
+                    justify="center"
+                    align="middle"
+                    className="Avatar__container"
+                >
                     <Col span={24}>
-                        <Avatar size={100} src={profileImg} />
+                        {!isCollapsed && <Avatar size={100} src={profileImg} />}
                     </Col>
                 </Row>
             </Sider>
