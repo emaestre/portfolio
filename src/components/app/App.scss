@@ -87,9 +87,26 @@
     }
 }
 
-.Avatar__container {
-    height: 30%;
+.Profile__container {
+    height: 35%;
     text-align: center;
+}
+
+.Profile__intro {
+    color: $white;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.Profile__social {
+    font-size: 35px;
+    color: $white;
+    a {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
 
 // --- AntDesign styles overwriting ---

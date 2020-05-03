@@ -1,10 +1,13 @@
 import React, { useState, useCallback } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Layout, Menu, Alert, Avatar, Row, Col } from 'antd';
+import { Layout, Menu, Alert, Avatar, Row, Col, Typography } from 'antd';
 import {
     HomeOutlined,
     FundProjectionScreenOutlined,
     UserOutlined,
+    LinkedinOutlined,
+    GithubOutlined,
+    MailOutlined,
 } from '@ant-design/icons';
 import Logo from 'components/logo';
 import profileImg from 'assets/profile.jpg';
@@ -12,6 +15,7 @@ import AppRouter from './App.router';
 import './App.scss';
 
 const { Header, Content, Footer, Sider } = Layout;
+const { Paragraph } = Typography;
 
 // TODO: Try to create a Menu component to reduce the App complexity
 function App() {
@@ -71,10 +75,45 @@ function App() {
                 <Row
                     justify="center"
                     align="middle"
-                    className="Avatar__container"
+                    className="Profile__container"
                 >
                     <Col span={24}>
                         {!isCollapsed && <Avatar size={100} src={profileImg} />}
+                    </Col>
+                    <Col span={24}>
+                        {!isCollapsed && (
+                            <Paragraph className="Profile__intro">
+                                I'm a responsible and friendly full-stack
+                                software engineer, welcome to my portfolio!
+                            </Paragraph>
+                        )}
+                    </Col>
+                    <Col span={24}>
+                        {!isCollapsed && (
+                            <div className="Profile__social">
+                                <a
+                                    href="https://www.linkedin.com/in/eleazarmaestre"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <LinkedinOutlined />
+                                </a>
+                                <a
+                                    href="https://github.com/emaestre"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <GithubOutlined />
+                                </a>
+                                <a
+                                    href="mailto:eleazarenrique23@gmail.com"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <MailOutlined />
+                                </a>
+                            </div>
+                        )}
                     </Col>
                 </Row>
             </Sider>
