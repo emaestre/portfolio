@@ -91,27 +91,29 @@ function App() {
                     <Col span={24}>
                         {!isCollapsed && (
                             <div className="Profile__social">
-                                <a
-                                    href="https://www.linkedin.com/in/eleazarmaestre"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    <LinkedinOutlined />
-                                </a>
-                                <a
-                                    href="https://github.com/emaestre"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    <GithubOutlined />
-                                </a>
-                                <a
-                                    href="mailto:eleazarenrique23@gmail.com"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    <MailOutlined />
-                                </a>
+                                <Row justify="center" align="middle">
+                                    <a
+                                        href="https://www.linkedin.com/in/eleazarmaestre"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <LinkedinOutlined />
+                                    </a>
+                                    <a
+                                        href="https://github.com/emaestre"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <GithubOutlined />
+                                    </a>
+                                    <a
+                                        href="mailto:eleazarenrique23@gmail.com"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <MailOutlined />
+                                    </a>
+                                </Row>
                             </div>
                         )}
                     </Col>

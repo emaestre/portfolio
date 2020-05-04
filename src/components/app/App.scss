@@ -90,6 +90,10 @@
 .Profile__container {
     height: 35%;
     text-align: center;
+    @include phone {
+        height: 50%;
+        max-width: 80%;
+    }
 }
 
 .Profile__intro {
@@ -98,6 +102,9 @@
     margin-right: 30px;
     font-style: italic;
     font-size: 20px;
+    @include phone {
+        margin-left: 0;
+    }
 }
 
 .Profile__social {
