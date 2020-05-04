@@ -2,7 +2,7 @@ import React, { useState, useCallback } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Layout, Menu, Alert, Avatar, Row, Col, Typography } from 'antd';
 import {
-    HomeOutlined,
+    ContactsOutlined,
     FundProjectionScreenOutlined,
     UserOutlined,
     LinkedinOutlined,
@@ -43,11 +43,11 @@ function App() {
                     selectedKeys={[location.pathname]}
                     className="App__menu"
                 >
-                    <Menu.Item key="/" title="Home">
-                        <HomeOutlined />
+                    <Menu.Item key="/" title="About">
+                        <UserOutlined />
                         <span>
                             <Link className="App__menu-item-link" to="/">
-                                Home
+                                About
                             </Link>
                         </span>
                     </Menu.Item>
@@ -62,11 +62,11 @@ function App() {
                             </Link>
                         </span>
                     </Menu.Item>
-                    <Menu.Item key="/about" title="About">
-                        <UserOutlined />
+                    <Menu.Item key="/contact" title="Contact">
+                        <ContactsOutlined />
                         <span>
-                            <Link className="App__menu-item-link" to="/about">
-                                About
+                            <Link className="App__menu-item-link" to="/contact">
+                                Contact Me
                             </Link>
                         </span>
                     </Menu.Item>
