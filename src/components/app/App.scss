@@ -35,6 +35,21 @@
 .App__header {
     padding: 5px;
     text-align: center;
+    h1 {
+        margin-right: 10%;
+        margin-left: 0;
+    }
+    @include phone {
+        h1 {
+            margin-right: 0;
+            margin-left: 15%;
+        }
+    }
+}
+
+.App__header--logo {
+    width: 120px;
+    height: 50px;
 }
 
 .App__layout .App__layout--background {
@@ -88,10 +103,9 @@
 }
 
 .Profile__container {
-    height: 35%;
+    margin-top: 20px;
     text-align: center;
     @include phone {
-        height: 50%;
         max-width: 80%;
     }
 }

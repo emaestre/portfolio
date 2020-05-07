@@ -12,6 +12,7 @@ import {
 import Logo from 'components/logo';
 import profileImg from 'assets/profile.jpg';
 import AppRouter from './App.router';
+import myLogo from 'assets/logo.png';
 import './App.scss';
 
 const { Header, Content, Footer, Sider } = Layout;
@@ -73,6 +74,7 @@ function App() {
                 </Menu>
                 {/* TODO: This should be a component */}
                 <Row
+                    gutter={[0, 24]}
                     justify="center"
                     align="middle"
                     className="Profile__container"
@@ -121,7 +123,18 @@ function App() {
             </Sider>
             <Layout className="App__layout">
                 <Header className="App__header App__layout--background">
-                    <h1>Eleazar Maestre D' Armas</h1>
+                    <Row>
+                        <Col xs={0} sm={0} md={4} lg={4} xl={4}>
+                            <img
+                                src={myLogo}
+                                className="App__header--logo"
+                                alt="MyLogo"
+                            />
+                        </Col>
+                        <Col xs={24} sm={24} md={18} lg={18} xl={18}>
+                            <h1>Eleazar Maestre D' Armas</h1>
+                        </Col>
+                    </Row>
                 </Header>
                 <Alert
                     message="This website is under development, for any ideas or concerns please refer to eleazarenrique23@gmail.com"
