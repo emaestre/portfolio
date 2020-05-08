@@ -6,6 +6,12 @@
         url('./assets/fonts/open-sans/OpenSans-Regular.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Open Sans Bold';
+    src: local('Open Sans Bold'),
+        url('./assets/fonts/open-sans/OpenSans-Bold.ttf') format('truetype');
+}
+
 body {
     margin: 0;
     font-family: 'Open Sans Regular';
