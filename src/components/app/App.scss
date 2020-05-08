@@ -20,9 +20,6 @@
         height: 100vh;
         position: fixed;
         left: 0;
-        .anticon {
-            margin-right: 25%;
-        }
     }
 }
 
@@ -38,6 +35,7 @@
     h1 {
         margin-right: 10%;
         margin-left: 0;
+        font-size: 25px;
     }
     @include phone {
         h1 {
@@ -103,7 +101,7 @@
 }
 
 .Profile__container {
-    margin-top: 20px;
+    margin-top: 20px !important;
     text-align: center;
     @include phone {
         max-width: 80%;
@@ -128,6 +126,15 @@
         margin-left: 10px;
         margin-right: 10px;
     }
+
+    a:link,
+    a:visited {
+        color: $aquamarine;
+    }
+
+    a:hover {
+        color: $skyblue;
+    }
 }
 
 // --- AntDesign styles overwriting ---
@@ -136,6 +143,14 @@
     @include phone {
         .anticon {
             margin-right: 0px;
+        }
+    }
+}
+
+.ant-layout-sider-trigger {
+    @include phone {
+        .anticon {
+            margin-right: 25%;
         }
     }
 }

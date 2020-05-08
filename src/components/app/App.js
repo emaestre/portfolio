@@ -48,7 +48,7 @@ function App() {
                         <UserOutlined />
                         <span>
                             <Link className="App__menu-item-link" to="/">
-                                About
+                                Learn more about me
                             </Link>
                         </span>
                     </Menu.Item>
@@ -59,7 +59,7 @@ function App() {
                                 className="App__menu-item-link"
                                 to="/projects"
                             >
-                                Projects
+                                See my projects
                             </Link>
                         </span>
                     </Menu.Item>
@@ -74,7 +74,7 @@ function App() {
                 </Menu>
                 {/* TODO: This should be a component */}
                 <Row
-                    gutter={[0, 24]}
+                    gutter={[6, 24]}
                     justify="center"
                     align="middle"
                     className="Profile__container"
@@ -132,7 +132,7 @@ function App() {
                             />
                         </Col>
                         <Col xs={24} sm={24} md={18} lg={18} xl={18}>
-                            <h1>Eleazar Maestre D' Armas</h1>
+                            <h1>Eleazar Maestre</h1>
                         </Col>
                     </Row>
                 </Header>
